@@ -1,0 +1,13 @@
+.main {
+  position: absolute; /* or absolute */
+   top: 35%;
+   left: 45%;
+}
+.buttonSize {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+.buttonResult {
+  width: 165px;
+}

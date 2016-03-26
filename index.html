@@ -1,54 +1,55 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div>
-    <TABLE BORDER=4>
+  <div class="main">
+  <form name="Calc">
+    <table border=4>
       <TR>
         <TD>
-          <INPUT TYPE="text" NAME="Input" Size="14">
+          <input TYPE="text" class= "buttonResult" NAME="Input" Size="14">
           <br>
         </TD>
       </TR>
-  </div>
   <div class="btn-group" role="group" aria-label="...">
     <tr>
       <td>
-        <button type="button" class="btn btn-default">1</button>
-        <button type="button" class="btn btn-default">2</button>
-        <button type="button" class="btn btn-default">3</button>
-        <button type="button" class="btn btn-default">+</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '1'" >1</button >
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '2'" >2</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '3'" >3</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '+'" >+</button>
     </tr>
     </td>
     <tr>
       <td>
-        <button type="button" class="btn btn-default">4</button>
-        <button type="button" class="btn btn-default">5</button>
-        <button type="button" class="btn btn-default">6</button>
-        <button type="button" class="btn btn-default">-</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '4'" >4</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '5'" >5</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '6'" >6</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '-'" >-</button>
       </td>
     </tr>
     <tr>
       <td>
-        <button type="button" class="btn btn-default">7</button>
-        <button type="button" class="btn btn-default">8</button>
-        <button type="button" class="btn btn-default">9</button>
-        <button type="button" class="btn btn-default">x</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '7'" >7</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '8'" >8</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '9'" >9</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '*'" >x</button>
       </td>
     </tr>
     <tr>
       <td>
-        <button type="button" class="btn btn-default">c</button>
-        <button type="button" class="btn btn-default">0</button>
-        <button type="button" class="btn btn-default">=</button>
-        <button type="button" class="btn btn-default">/</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += 'c'" >c</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '0'" >0</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '='" >=</button>
+        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '/'" >/</button>
       </td>
     </tr>
   </div>
+</div>
 </body>
 
 </html>
