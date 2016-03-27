@@ -13,7 +13,7 @@
       <table border=4>
         <TR>
           <TD>
-            <input TYPE="text" class="buttonResult demo" NAME="Input" Size="14"> </input>
+            <input TYPE="text" id = "input" class="buttonResult demo" NAME="Input" Size="14"> </input>
             <br>
           </TD>
         </TR>
@@ -44,9 +44,9 @@
           </tr>
           <tr>
             <td>
-              <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += 'c'">c</button>
+              <button type="button" id="cleanInput" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += 'c'">c</button>
               <button type="button" class="btn btn-primary buttonSize demo" OnClick="Calc.Input.value += '0'">0</button>
-              <button type="button"  id="abc" class="btn btn-primary buttonSize demo " OnClick="Calc.Input.value += '='">=</button>
+              <button type="button"  id="result" class="btn btn-primary buttonSize demo " OnClick="Calc.Input.value += '='">=</button>
               <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '/'">/</button>
             </td>
           </tr>
