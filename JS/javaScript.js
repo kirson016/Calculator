@@ -1,12 +1,6 @@
-keys(){
-  innerHTML.alert("hello world");
+
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+    var x=document.getElementById("demo");
+ alert(x.innerHTML);
 }
-key(){
-  innerHTML.alert("hello world");
-}
-function toCelsius() {
-    alert("AAAAAAAAAAAAA!");
-}
-document.getElementById("demo").innerHTML = toCelsius;
- document.getElementById("demo") = alert("aaaaaaaaaaaaa");
-  alert("aaaaaaaaaaaaa") = document.getElementById("demo");
