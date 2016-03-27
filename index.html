@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <script src="JS\javaScript.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -11,7 +12,7 @@
     <table border=4>
       <TR>
         <TD>
-          <input TYPE="text" class= "buttonResult" NAME="Input" Size="14">
+          <input TYPE="text" id = "demo" class= "buttonResult demo" NAME="Input" Size="14">
           <br>
         </TD>
       </TR>
@@ -43,8 +44,8 @@
     <tr>
       <td>
         <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += 'c'" >c</button>
-        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '0'" >0</button>
-        <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '='" >=</button>
+        <button type="button" class="btn btn-primary buttonSize demo" OnClick="Calc.Input.value += '0'" >0</button>
+        <button type="button" class="btn btn-primary buttonSize demo " id = "demo" OnClick="Calc.Input.value += '='" >=</button>
         <button type="button" class="btn btn-primary buttonSize" OnClick="Calc.Input.value += '/'" >/</button>
       </td>
     </tr>
