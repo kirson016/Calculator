@@ -1,19 +1,15 @@
-var calculator ={
+var calculator = {
+  elResult: document.getElementById('result'),
+  input: document.getElementById('cleanInput'),
 
+  getResult: function() {
+    document.getElementById("input").value = eval(Calc.Input.value);
+  },
 
+  resetInput: function() {
+    document.getElementById("input").value = " ";
+  },
+};
 
-}
-
-
-function getResult() {
-  document.getElementById("input").value = eval(Calc.Input.value);
-
-}
-var elResult = document.getElementById('result');
-elResult.onclick = getResult;
-
-function resetInput() {
-  document.getElementById("input").value = "0";
-}
-var input = document.getElementById('cleanInput');
-input.onclick = resetInput;
+calculator.elResult.onclick = calculator.getResult,
+calculator.input.onclick = calculator.resetInput
