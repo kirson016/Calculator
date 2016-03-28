@@ -1,15 +1,16 @@
 var calculator = {
-  elResult: document.getElementById('result'),
-  input: document.getElementById('cleanInput'),
+  elResult: document.getElementById('resultButton'),
+  clearButoon: document.getElementById('clearButton'),
+  elInput: document.getElementById('resultWindow'),
 
   getResult: function() {
-    document.getElementById("input").value = eval(Calc.Input.value);
+    document.getElementById("resultWindow").value = eval(Calc.Input.value);
   },
 
   resetInput: function() {
-    document.getElementById("input").value = " ";
+    document.getElementById("resultWindow").value = " ";
   },
 };
 
-calculator.elResult.onclick = calculator.getResult,
-calculator.input.onclick = calculator.resetInput
+calculator.elResult.onclick = calculator.getResult;
+calculator.clearButoon.onclick = calculator.resetInput;
