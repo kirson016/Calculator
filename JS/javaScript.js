@@ -1,12 +1,19 @@
+var calculator ={
+
+
+
+}
+
 
 function getResult() {
-  alert("elResult");
+  document.getElementById("input").value = eval(Calc.Input.value);
+
 }
 var elResult = document.getElementById('result');
 elResult.onclick = getResult;
 
 function resetInput() {
-  document.getElementById("input").value = "0";;
+  document.getElementById("input").value = "0";
 }
 var input = document.getElementById('cleanInput');
 input.onclick = resetInput;
