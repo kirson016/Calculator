@@ -1,3 +1,4 @@
+
 function getResult() {
   alert("elResult");
 }
